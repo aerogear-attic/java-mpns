@@ -1,0 +1,11 @@
+language: java
+
+jdk:
+  - oraclejdk7
+  - openjdk6
+notifications:
+  irc: "irc.freenode.org#aerogear"
+
+branches:
+  only:
+    - master
