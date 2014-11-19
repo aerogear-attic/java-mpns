@@ -1,3 +1,5 @@
+# java-mpns [![Build Status](https://travis-ci.org/aerogear/java-mpns.png)](https://travis-ci.org/aerogear/java-mpns)
+
 java-mpns is a Java client for Microsoft Push Notification service (MPNs).
 The library aims to provide a highly scalable interface to the Apple
 server, while still being simple and modular.
