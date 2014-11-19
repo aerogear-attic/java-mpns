@@ -1,14 +1,24 @@
-.DS_Store
-.#*
-*.sw?
-bin
+*.class
 
-target
+# Package Files #
+*.jar
+*.war
+*.ear
+
+#Build targets
+target/
+/target
+*/target
+
+#Maven release files
+*.releaseBackup
 release.properties
 
-*~
-
-.project
+.idea/
+*.class
+*.iml
 .classpath
-.settings
-tags
+.project
+.settings/
+
+.DS_Store
