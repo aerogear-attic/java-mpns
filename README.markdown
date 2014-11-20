@@ -2,7 +2,7 @@
 
 _Note:_ This is a maintained fork of [https://github.com/notnoop/java-mpns](https://github.com/notnoop/java-mpns)
 
-java-mpns is a Java client for Microsoft Push Notification service (MPNs).
+java-mpns is a Java client for [Microsoft Push Notification service (MPNs)](http://msdn.microsoft.com/en-us/library/windows/apps/ff402558.aspx).
 The library aims to provide a highly scalable interface to the Apple
 server, while still being simple and modular.
 
