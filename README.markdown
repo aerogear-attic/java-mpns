@@ -2,6 +2,16 @@
 
 _Note:_ This is a maintained fork of [https://github.com/notnoop/java-mpns](https://github.com/notnoop/java-mpns)
 
+|                 | Project Info  |
+| --------------- | ------------- |
+| License:        | Apache License, Version 2.0  |
+| Build:          | Maven  |
+| Documentation:  | https://aerogear.org/push/  |
+| Issue tracker:  | https://issues.jboss.org/browse/AGPUSH  |
+| Mailing lists:  | [aerogear-users](http://aerogear-users.1116366.n5.nabble.com/) ([subscribe](https://lists.jboss.org/mailman/listinfo/aerogear-users))  |
+|                 | [aerogear-dev](http://aerogear-dev.1069024.n5.nabble.com/) ([subscribe](https://lists.jboss.org/mailman/listinfo/aerogear-dev))  |
+
+
 java-mpns is a Java client for [Microsoft Push Notification service (MPNs)](http://msdn.microsoft.com/en-us/library/windows/apps/ff402558.aspx).
 The library aims to provide a highly scalable interface to the Microsoft Push
 server, while still being simple and modular.
