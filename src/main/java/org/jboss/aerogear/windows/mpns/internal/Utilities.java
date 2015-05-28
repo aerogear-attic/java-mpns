@@ -19,6 +19,7 @@ package org.jboss.aerogear.windows.mpns.internal;
 
 import org.apache.http.Header;
 import org.apache.http.HttpResponse;
+import org.apache.http.client.methods.HttpPost;
 import org.apache.http.impl.conn.tsccm.ThreadSafeClientConnManager;
 import org.jboss.aerogear.windows.mpns.DeliveryClass;
 import org.jboss.aerogear.windows.mpns.MpnsDelegate;
@@ -26,6 +27,7 @@ import org.jboss.aerogear.windows.mpns.MpnsNotification;
 import org.jboss.aerogear.windows.mpns.MpnsResponse;
 
 import java.io.UnsupportedEncodingException;
+import java.net.URI;
 
 public final class Utilities {
     private Utilities() { throw new AssertionError("Uninstantiable class"); }
@@ -139,14 +141,15 @@ public final class Utilities {
         return null;
     }
 
-    public static void fireDelegate(MpnsNotification message, HttpResponse response, MpnsDelegate delegate) {
+    public static void fireDelegate(HttpPost request, MpnsNotification message, HttpResponse response, MpnsDelegate delegate) {
         if (delegate != null) {
             MpnsResponse r = Utilities.logicalResponseFor(response);
 
+            URI uri = request.getURI();
             if (r.isSuccessful()) {
-                delegate.messageSent(message, r);
+                delegate.messageSent(uri.toString(), message, r);
             } else {
-                delegate.messageFailed(message, r);
+                delegate.messageFailed(uri.toString(), message, r);
             }
         }
     }
