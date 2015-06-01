@@ -18,6 +18,6 @@
 package org.jboss.aerogear.windows.mpns;
 
 public interface MpnsDelegate {
-    public void messageSent(MpnsNotification message, MpnsResponse response);
-    public void messageFailed(MpnsNotification message, MpnsResponse response);
+    public void messageSent(String subscriptionUri, MpnsNotification message, MpnsResponse response);
+    public void messageFailed(String subscriptionUri, MpnsNotification message, MpnsResponse response);
 }
