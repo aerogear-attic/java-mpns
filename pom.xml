@@ -8,7 +8,7 @@
 
     <groupId>org.jboss.aerogear.windows</groupId>
     <artifactId>java-mpns</artifactId>
-    <version>0.2.0-SNAPSHOT</version>
+    <version>0.2.0</version>
 	
     <name>Java Microsoft Push Notification Service Library</name>
     <url>http://aerogear.org/push</url>
@@ -17,7 +17,7 @@
         <connection>scm:git:git://github.com/aerogear/java-mpns.git</connection>
         <developerConnection>scm:git:git@github.com:aerogear/java-mpns.git</developerConnection>
         <url>https://github.com/aerogear/java-mpns</url>
-      <tag>HEAD</tag>
+      <tag>0.2.0</tag>
   </scm>
 
     <dependencies>
