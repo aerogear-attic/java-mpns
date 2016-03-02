@@ -24,24 +24,24 @@ public enum MpnsResponse {
     /**
      * The notification request was accepted and queued for delivery.
      */
-    RECEIVED(200, "Received", "Connected", "Active", true, false),
+    RECEIVED(200, "received", "connected", "active", true, false),
 
     /**
      * The notification was processed by WNS but the device is offline.
      */
-    DISCONNECTED(200, "Received", "Disconnected", "Active", true, false),
+    DISCONNECTED(200, "received", "disconnected", "active", true, false),
 
     /**
      * The notification request was accepted and queued for delivery.
      */
-    QUEUED(200, "Received", "TempDisconnected", "Active", true, false),
+    QUEUED(200, "received", "tempdisconnected", "active", true, false),
 
     /**
      * Queue overflow. The web service should re-send the notification later.
      * A best practice is to use an exponential backoff algorithm in minute
      * increments.
      */
-    QUEUE_FULL(200, "QueueFull", null, "Active", false, true),
+    QUEUE_FULL(200, "queuefull", null, "active", false, true),
 
     /**
      * The push notification was received and dropped by the Push Notification
@@ -49,7 +49,7 @@ public enum MpnsResponse {
      * was configured to suppress push notifications for a particular push
      * notification class.
      */
-    SUPPRESSED(200, "Suppressed", null, "Active", false, false),
+    SUPPRESSED(200, "suppressed", null, "active", false, false),
 
     /***
      * The push notification was received and dropped by the client.
@@ -57,7 +57,7 @@ public enum MpnsResponse {
      * or if battery saving is enabled.
      * This state doesn't seem to be documented yet.
      */
-    DROPPED_BY_CLIENT(200, "Dropped", "Connected", "Active", false, false),
+    DROPPED_BY_CLIENT(200, "dropped", "connected", "active", false, false),
 
     /**
      * This error occurs when the web service sends a notification request
@@ -77,7 +77,7 @@ public enum MpnsResponse {
      * subscription, and drop the subscription state for its corresponding
      * application session.
      */
-    EXPIRED(404, "Dropped", null, "Expired", false, false),
+    EXPIRED(404, "dropped", null, "expired", false, false),
 
     /**
      * Invalid method (PUT, DELETE, CREATE). Only POST is allowed when sending
@@ -92,7 +92,7 @@ public enum MpnsResponse {
      * error. The web service may need to wait up to 24 hours before normal
      * notification flow will resume.
      */
-    OVER_LIMIT(406, "Dropped", null, "Active", false, true),
+    OVER_LIMIT(406, "dropped", null, "active", false, true),
 
     /**
      * The device is in an inactive state. The web service may re-attempt
@@ -101,7 +101,7 @@ public enum MpnsResponse {
      * hour, the Push Notification Service will de-register or permanently
      * block the web service.
      */
-    INACTIVATE_STATE(412, "Dropped", "Inactive", null, false, true),
+    INACTIVATE_STATE(412, "dropped", "inactive", null, false, true),
 
     /**
      * The Push Notification Service is unable to process the request. The web

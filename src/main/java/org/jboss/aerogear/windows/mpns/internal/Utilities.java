@@ -138,17 +138,17 @@ public final class Utilities {
             }
 
             if (r.getNotificationStatus() != null
-                    && !r.getNotificationStatus().equals(headerValue(response, "X-NotificationStatus"))) {
+                    && !r.getNotificationStatus().equalsIgnoreCase(headerValue(response, "X-NotificationStatus"))) {
                 continue;
             }
 
             if (r.getDeviceConnectionStatus() != null
-                    && !r.getDeviceConnectionStatus().equals(headerValue(response, "X-DeviceConnectionStatus"))) {
+                    && !r.getDeviceConnectionStatus().equalsIgnoreCase(headerValue(response, "X-DeviceConnectionStatus"))) {
                 continue;
             }
 
             if (r.getSubscriptionStatus() != null
-                    && !r.getSubscriptionStatus().equals(headerValue(response, "X-SubscriptionStatus"))) {
+                    && !r.getSubscriptionStatus().equalsIgnoreCase(headerValue(response, "X-SubscriptionStatus"))) {
                 continue;
             }
 
