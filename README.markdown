@@ -40,7 +40,7 @@ To send a notification, you can do it in two steps:
         <dependency>
             <groupId>org.jboss.aerogear.windows</groupId>
             <artifactId>java-mpns</artifactId>
-            <version>0.1.0</version>
+            <version>0.3.0</version>
         </dependency>
 
 2. Setup the connection
