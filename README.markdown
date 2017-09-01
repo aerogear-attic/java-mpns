@@ -1,4 +1,8 @@
-# java-mpns [![Build Status](https://travis-ci.org/aerogear/java-mpns.png)](https://travis-ci.org/aerogear/java-mpns)
+#Deprecated
+
+this module is no longer maintained
+
+## java-mpns [![Build Status](https://travis-ci.org/aerogear/java-mpns.png)](https://travis-ci.org/aerogear/java-mpns)
 
 _Note:_ This is a maintained fork of [https://github.com/notnoop/java-mpns](https://github.com/notnoop/java-mpns)
 
